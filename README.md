@@ -1,10 +1,12 @@
 # WORK IN PROGRESS Running!
 
 ## ScadaLTS Installer for Rasberry PI
-   -default-jdk_1.11-71
-   -apache-tomcat-9.0.50
-   -mariadb-server_10.3.29-0
-   -Scada-LTS 2.5
+
+   - default-jdk_1.11-71
+   - apache-tomcat-9.0.50
+   - mariadb-server_10.3.29-0
+   - Scada-LTS 2.5
+ 
 - Tested on (Buster 32bit RPI 4)
 
 ## ScadaLTS Installation:

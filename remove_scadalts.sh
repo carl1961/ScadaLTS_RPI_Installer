@@ -16,6 +16,6 @@ echo "Removing tomcat and ScadaLTS folders..."
 rm -rf /opt/tomcat
 echo "Removing install files..."
 rm /etc/init.d/tomcat
-rm -rf ScadaLTS_RPI_32bit_OS_Installer
+rm -rf ScadaLTS_ScadaLTS_RPI_Installer
 
 echo "ScadaLTS was successfully removed."

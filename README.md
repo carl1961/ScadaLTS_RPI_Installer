@@ -33,7 +33,10 @@ wget https://github.com/carl1961/ScadaLTS_RPI_Installer/raw/main/remove_scadalts
 
 #### sudo ./remove_scadalts.sh
 
-Note: When installing MariaDB Server, mysql_secure_installation
+
+##Note: 
+
+When installing MariaDB Server, mysql_secure_installation
 
 Just follow the prompts to set a password for the root user and to secure your MySQL installation.
 

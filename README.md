@@ -1,7 +1,8 @@
-WORK IN PROGRESS
+# WORK IN PROGRESS
 
-# ScadaLTS Installer for Rasberry PI (Buster 32bit) (testing on RPI 4)
+## ScadaLTS Installer for Rasberry PI
 
+- Tested on (Buster 32bit RPI 4)
 
 ## ScadaLTS Installation:
 - Download the sources 

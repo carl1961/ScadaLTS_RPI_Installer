@@ -12,7 +12,7 @@ git clone https://github.com/carl1961/ScadaLTS_RPI_Installer.git
 
 - Move to install folder
 
-#### cd ScadaLTS_RPI_32bit_OS_Installer
+#### cd ScadaLTS_RPI_Installer
 
 - Give execute permissions to `install_scadalts.sh`
  

@@ -34,7 +34,6 @@ wget https://github.com/carl1961/ScadaLTS_RPI_Installer/raw/main/remove_scadalts
 
 #### sudo ./remove_scadalts.sh
 
-
 ## Note: 
 
 When installing MariaDB Server, mysql_secure_installation

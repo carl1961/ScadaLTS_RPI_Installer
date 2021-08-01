@@ -65,4 +65,4 @@ To access your Raspberry Pi’s MySQL server and start making changes to your da
  You will be prompted to enter the password that you just created.
 
 
-#### In web browser type   http://localhost:8080/ScadaBR  or IP address http://192.168.1.27:8080/ScadaBR
+#### In web browser type   http://localhost:8080/ScadaBR  or IP address http://xxx.xxx.xxx.xxx:8080/ScadaBR

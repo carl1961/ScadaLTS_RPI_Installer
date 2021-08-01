@@ -10,7 +10,11 @@ WORK IN PROGRESS
 ## ScadaLTS Installation:
 - Download the sources 
  
-wget https://github.com/carl1961/ScadaLTS_RPI_Installer/raw/main/install_scadalts.sh
+wget clone https://github.com/carl1961/ScadaLTS_RPI_32bit_OS_Installer.git
+
+- Move to install folder
+
+#### cd /ScadaLTS_RPI_32bit_OS_Installer
 
 - Give execute permissions to `install_scadalts.sh`
  

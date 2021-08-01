@@ -4,29 +4,8 @@
 # date 7/29/2021
 
 
-function checkFiles {
-	cd "$INSTALL_FOLDER"
-	
-    if [[ -f "$tomcat" ]] && [[ -f "$scadalts" ]] ; then
-		# Installer files present, continue
-		echo "Files present! Lets go to install!"
-    else
-		# Files not present. Abort
-		echo "ERROR:ScadaLTS and/or Tomcat files not found! Aborting." 
-		exit 1
-    fi
-}
-
-# Setting  variables...
 
 MACHINE_TYPE=$(uname -m)
-INSTALL_FOLDER=/home/pi/ScadaLTS_RPI_32bit_OS_Installer
-
-
-# Files
-tomcat=apache-tomcat-9.0.50.tar.gz
-scadalts=ScadaBR.war
-
 
 echo "Welcome to ScadaLTS installer!"
 echo
@@ -55,8 +34,6 @@ case $MACHINE_TYPE in
 		exit
 	;;
 esac
-
-checkFiles
 
 
 # Ensure running as root

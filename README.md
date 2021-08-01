@@ -42,25 +42,9 @@ wget https://raw.githubusercontent.com/carl1961/ScadaLTS_RPI_Installer/main/remo
 
 ## Note: 
 
-When installing MariaDB Server, mysql_secure_installation will prompt, just hit enter
+MariaDB Server, and Scada-LTS Database Auto filled by install_scadalts.sh
 
-Just follow the prompts to set a password for the root user and to secure your MySQL installation.
-
-For a more secure installation, you should answer “Y” to all prompts when asked to answer “Y” or “N“.
-
-These prompts will remove features that allows someone to gain access to the server easier.
-
-Make sure you write down the password you set during this process 
-
-When you see this  just type quit 
-
-Cleaning up...
-
-All done!  If you've completed all of the above steps, your MariaDB
-installation should now be secure.
-
-Thanks for using MariaDB!
-Enter password:
+When Finish, Rasberry PI will reboot after 5 seconds
 
 
 To access your Raspberry Pi’s MySQL server and start making changes to your databases, you can enter the following command.
@@ -71,3 +55,5 @@ To access your Raspberry Pi’s MySQL server and start making changes to your da
 
 
 #### In web browser type   http://localhost:8080/ScadaBR  or IP address http://xxx.xxx.xxx.xxx:8080/ScadaBR
+
+## https://github.com/SCADA-LTS/Scada-LTS       scada-lts.org       https://www.facebook.com/ScadaLTS

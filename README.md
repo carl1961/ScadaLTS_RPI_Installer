@@ -49,11 +49,11 @@ When Finish, Rasberry PI will reboot after 5 seconds
 
 To access your Raspberry Pi’s MySQL server and start making changes to your databases, you can enter the following command.
 
-####sudo mysql -u root -p
+####  sudo mysql -u root -p
 
  You will be prompted to enter the password that you just created.
 
 
 #### In web browser type   http://localhost:8080/ScadaBR  or IP address http://xxx.xxx.xxx.xxx:8080/ScadaBR
 
-## https://github.com/SCADA-LTS/Scada-LTS       scada-lts.org       https://www.facebook.com/ScadaLTS
+## https://github.com/SCADA-LTS/Scada-LTS         http://scada-lts.org/       https://www.facebook.com/ScadaLTS

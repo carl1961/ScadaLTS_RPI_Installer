@@ -16,6 +16,49 @@ function checkFiles {
 		exit 1
     fi
 }
+
+# Setting  variables...
+
+MACHINE_TYPE=$(uname -m)
+INSTALL_FOLDER=/home/pi/ScadaLTS_RPI_32bit_OS_Installer
+
+
+# Files
+tomcat=apache-tomcat-9.0.50.tar.gz
+scadalts=ScadaBR.war
+
+
+echo "Welcome to ScadaLTS installer!"
+echo
+
+case $MACHINE_TYPE in
+	arm64 | armv8l | aarch64)
+		echo "ARM 64-bit machine detected"
+		echo "ERROR: ARM 64-bit Not Supported! Aborting"
+		exit
+	;;
+    
+    armv6l | armv7l)
+		echo "ARM 32-bit machine detected"
+		echo "ARM 32-bit Supported"
+	;;
+    
+	x86_64)
+		echo "x86_64 machine detected"
+		echo "ERROR: x86_64 Not Supported! Aborting" 
+		exit
+	;;
+    
+	*)
+		echo "32-bit machine detected"
+		echo "This x86 32-bit  Not Supported! Aborting"
+		exit
+	;;
+esac
+
+checkFiles
+
+
 # Ensure running as root
 if [ "$EUID" -ne 0 ]
   then echo "Please run as root"
@@ -135,44 +178,3 @@ echo "Removing ScadaBR.war file"
 sudo rm /opt/tomcat/apache-tomcat-9.0.50/webapps/ScadaBR.war
 
 #sudo rm /opt/tomcat/apache-tomcat-7.0.96/webapps/ScadaBR.war
-# Setting  variables...
-
-MACHINE_TYPE=$(uname -m)
-INSTALL_FOLDER=/home/pi/ScadaLTS_RPI_32bit_OS_Installer
-
-
-# Files
-tomcat=apache-tomcat-9.0.50.tar.gz
-scadalts=ScadaBR.war
-
-
-echo "Welcome to ScadaLTS installer!"
-echo
-
-case $MACHINE_TYPE in
-	arm64 | armv8l | aarch64)
-		echo "ARM 64-bit machine detected"
-		echo "ERROR: ARM 64-bit Not Supported! Aborting"
-		exit
-	;;
-    
-    armv6l | armv7l)
-		echo "ARM 32-bit machine detected"
-		echo "ARM 32-bit Supported"
-	;;
-    
-	x86_64)
-		echo "x86_64 machine detected"
-		echo "ERROR: x86_64 Not Supported! Aborting" 
-		exit
-	;;
-    
-	*)
-		echo "32-bit machine detected"
-		echo "This x86 32-bit  Not Supported! Aborting"
-		exit
-	;;
-esac
-
-checkFiles
-

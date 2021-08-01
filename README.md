@@ -53,8 +53,8 @@ To access your Raspberry Pi’s MySQL server and start making changes to your da
 
  You will be prompted to enter the password 
  
-- mariadb-server_10.3.29-0 PSWD/admin
-- Scada-LTS 2.5     User/admin  PSWD/admin
+- mariadb-server_10.3.29-0  ####  PSWD/admin
+- Scada-LTS 2.5   ####  User/admin  PSWD/admin
 
 
 #### In web browser type   http://localhost:8080/ScadaBR  or IP address http://xxx.xxx.xxx.xxx:8080/ScadaBR

@@ -6,15 +6,6 @@ echo "Welcome to ScadaLTS installer!"
 sleep 2
 echo
 
-
-if [[ $EUID -ne 0 ]]; then
-    echo "This script must be run as root. Make sure you used sudo."
-    echo "Usage:"
-    echo "sudo $0"
-    echo "sudo $0 silent (for silent install)"
-    exit 1
-fi
-
 cd
 apt-get update
 

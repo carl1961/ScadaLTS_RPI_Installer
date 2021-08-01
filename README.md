@@ -8,7 +8,7 @@
 - Download the sources 
  
 
-git clone https://github.com/carl1961/ScadaLTS_RPI_32bit_OS_Installer.git
+git clone https://github.com/carl1961/ScadaLTS_RPI_Installer.git
 
 - Move to install folder
 
@@ -25,7 +25,7 @@ You may have to answer Y for some installs
 ## Remove ScadaLTS Installation:
 - Download the sources 
 - 
-wget https://raw.githubusercontent.com/carl1961/ScadaLTS_RPI_32bit_OS_Installer/main/remove_scadalts.sh
+wget https://raw.githubusercontent.com/carl1961/ScadaLTS_RPI_Installer/main/remove_scadalts.sh
 
 - Give execute permissions to`remove_scadalts.sh` 
  

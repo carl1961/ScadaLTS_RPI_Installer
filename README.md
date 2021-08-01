@@ -36,7 +36,7 @@ wget https://raw.githubusercontent.com/carl1961/ScadaLTS_RPI_32bit_OS_Installer/
 
 ## Note: 
 
-When installing MariaDB Server, mysql_secure_installation
+When installing MariaDB Server, mysql_secure_installation will prompt, just hit enter
 
 Just follow the prompts to set a password for the root user and to secure your MySQL installation.
 
@@ -45,6 +45,17 @@ For a more secure installation, you should answer “Y” to all prompts when as
 These prompts will remove features that allows someone to gain access to the server easier.
 
 Make sure you write down the password you set during this process 
+
+When you see this  just type quit 
+
+Cleaning up...
+
+All done!  If you've completed all of the above steps, your MariaDB
+installation should now be secure.
+
+Thanks for using MariaDB!
+Enter password:
+
 
 To access your Raspberry Pi’s MySQL server and start making changes to your databases, you can enter the following command.
 

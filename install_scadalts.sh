@@ -1,20 +1,14 @@
-
 #Carl Shelton
 #email: cmshelton2021@protonmail.com
 # date 7/29/2021
 echo "Welcome to ScadaLTS installer!"
 sleep 2
-
-cd
 apt-get update
-
 echo "Installing Tomcat"
 sleep 2
-#move to install folder
-cd /home/pi/ScadaLTS_RPI_Installer
 
-#unpacking the file     
 tar vzxf apache-tomcat-9.0.50.tar.gz
+#incase this is a reinstall
 rm -rf /opt/tomcat
 sudo mkdir -p /opt/tomcat
 sudo mv apache-tomcat-9.0.50 /opt/tomcat/
@@ -35,10 +29,9 @@ source  ~/.bashrc
 echo "Install Tomcat init.d "
 sleep 2
 #copy the startup script to /etc/init.d folder
-cd /home/pi/ScadaLTS_RPI_Installer
+
 cp tomcat /etc/init.d
 
-cd 
 chmod +x /etc/init.d/tomcat
 update-rc.d tomcat defaults
 
@@ -86,10 +79,9 @@ sudo mysql -e "flush privileges"
 
 echo "Installing Scada-LTC "
 sleep 2
-cd 
 
 mkdir -p /opt/tomcat/apache-tomcat-9.0.50/webapps/ScadaBR
-cd /home/pi/ScadaLTS_RPI_Installer
+
 unzip ScadaBR.war -d /opt/tomcat/apache-tomcat-9.0.50/webapps/ScadaBR
 sudo rm /opt/tomcat/apache-tomcat-9.0.50/webapps/ScadaBR/WEB-INF/classes/env.properties
 cp env.properties /opt/tomcat/apache-tomcat-9.0.50/webapps/ScadaBR/WEB-INF/classes/
@@ -97,16 +89,12 @@ cp env.properties /opt/tomcat/apache-tomcat-9.0.50/webapps/ScadaBR/WEB-INF/class
 sleep 2
 
 
-echo "Removing install folder"
-#cd 
-sudo rm -rf ScadaLTS_RPI_Installer
+#echo "Removing install folder"
+ 
+#sudo rm -rf ScadaLTS_RPI_Installer
 
-echo "Removing ScadaBR.war file"
-
-
+#echo "Removing ScadaBR.war file"
 
 echo "ScadaLTS Install Complete!"
 
-echo "Rebooting System"
-sleep 5
-sudo reboot
+

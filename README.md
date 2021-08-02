@@ -1,5 +1,8 @@
 # WORK IN PROGRESS Running!
 
+If git does not work? install git
+sudo apt-get install git
+
 ## ScadaLTS Installer for Rasberry PI
 
    - default-jdk_1.11-71
